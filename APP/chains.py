@@ -12,7 +12,7 @@ from langchain_groq import ChatGroq
 
 class Chain:
     def __init__(self):
-        self.llm=ChatGroq(temperature=0,groq_api_key="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",model="llama-3.1-70b-versatile")
+        self.llm=ChatGroq(temperature=0,groq_api_key="add api key",model="llama-3.1-70b-versatile")
     def extract_jobs(self, cleaned_text):
         prompt_extract = PromptTemplate.from_template(
             """
