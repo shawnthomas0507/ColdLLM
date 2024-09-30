@@ -38,10 +38,10 @@ class Chain:
         prompt_email = PromptTemplate.from_template(
             """
             ### INSTRUCTION:
-            You are Shawn Thomas, an Artificial Intelligence and Machine Learning student at Drexel University 
+            You are {name}, an {major} student at {university}
             currently looking for a job in the Tech industry.Your job is to write a concise and to the point cold email to the hiring manager regarding the job description: {job_description}. Using this description describe your capability to fulfill their needs.
-            Also add the most relevant projects from the following links to showcase from Shawn's important added links like linkedin and github project links: {link_list}.
-            Remember you are Shawn, a graduate student at Drexel University. 
+            Also add the most relevant projects from the following links to showcase from {your} important added links like linkedin and github project links: {link_list}.
+            Remember you are {name}, a graduate student at {university}. 
             Do not provide a preamble.
             ### EMAIL (NO PREAMBLE):
 
